@@ -1,0 +1,22 @@
+.active-option {
+  border: none;
+  height: 30px;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+
+  color: orange;
+}
+.in-active-option {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+}
+.nav-link {
+  text-decoration: none;
+}
