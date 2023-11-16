@@ -18,8 +18,12 @@ export default function Footer() {
         />
         <h1 className="footer-website-heading">Tasty Kitchens</h1>
       </div>
-      <p className="footer-des">The only thing we are serious about is food.</p>
-      <p className="footer-des">Contact us on</p>
+      <p className="footer-des">
+        The only thing we are serious about is food.
+        <br />
+        Contact us on
+      </p>
+
       <div className="media-icons-container">
         <FaPinterestSquare
           fill="white"
@@ -29,7 +33,7 @@ export default function Footer() {
         <FaInstagramSquare
           fill="white"
           size="24"
-          data-testid="instagram-social-icon"
+          testid="instagram-social-icon"
         />
         <FaTwitter fill="white" size="24" testid="twitter-social-icon" />
         <FaFacebookSquare

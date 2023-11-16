@@ -1,0 +1,38 @@
+.each-restaurant {
+  list-style-type: none;
+  width: 31%;
+}
+.restaurant-image {
+  width: 40%;
+  height: 150px;
+  margin-right: 7px;
+}
+.each-restaurant-name {
+  font-size: 16px;
+}
+.cuisine {
+  font-size: 13px;
+}
+.ratings-container {
+  display: flex;
+  align-items: center;
+}
+.each-restaurant-rating {
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.total-reviews {
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.links {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}

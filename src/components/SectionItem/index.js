@@ -12,11 +12,11 @@ const SectionItem = props => {
   const activeClassName = isActive ? 'active-option' : 'in-active-option'
 
   return (
-    <p className={activeClassName}>
-      <Link to={path} className="nav-link">
+    <li className="tab-item">
+      <Link to={path} className={`nav-link ${activeClassName}`}>
         {displayText}
       </Link>
-    </p>
+    </li>
   )
 }
 

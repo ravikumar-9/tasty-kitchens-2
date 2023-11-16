@@ -20,3 +20,6 @@
 .nav-link {
   text-decoration: none;
 }
+.tab-item {
+  list-style-type: none;
+}

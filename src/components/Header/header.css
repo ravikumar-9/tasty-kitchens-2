@@ -4,6 +4,8 @@
   justify-content: center;
   background-color: #f7f6f2;
   height: 9vh;
+  width: 100%;
+  position: static;
 }
 .header-sub-container {
   display: flex;
@@ -14,6 +16,8 @@
 .header-logo-container {
   display: flex;
   align-items: center;
+  width: 20%;
+  align-self: flex-start;
 }
 .header-website-heading {
   font-weight: bold;
