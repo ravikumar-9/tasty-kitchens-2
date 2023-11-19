@@ -1,0 +1,32 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.not-found-image {
+  height: 300px;
+  width: 500px;
+}
+.not-found-heading {
+  font-size: 17px;
+  font-weight: bold;
+}
+.not-found-description {
+  font-size: 13px;
+}
+.home-button {
+  height: 30px;
+  width: 90px;
+  border: none;
+  background-color: orange;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.button-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+}

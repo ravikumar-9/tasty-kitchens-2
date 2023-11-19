@@ -15,10 +15,10 @@ const largeImageURl =
 console.log(largeImageURl)
 
 class Login extends Component {
-  state = {name: '', password: '', showError: false, errorMsg: ''}
+  state = {username: '', password: '', showError: false, errorMsg: ''}
 
   onChangeUserName = event => {
-    this.setState({name: event.target.value})
+    this.setState({username: event.target.value})
   }
 
   onChangePassword = event => {
@@ -26,6 +26,7 @@ class Login extends Component {
   }
 
   onSubmitSuccess = jwtToken => {
+    console.log(jwtToken)
     Cookies.set('jwt_token', jwtToken, {expires: 30})
     const {history} = this.props
     history.replace('/')
@@ -38,9 +39,9 @@ class Login extends Component {
   onSubmitForm = async event => {
     event.preventDefault()
 
-    const {name, password} = this.state
+    const {username, password} = this.state
 
-    const userDetails = {username: name, password}
+    const userDetails = {username, password}
 
     const url = 'https://apis.ccbp.in/login'
     const options = {
@@ -59,10 +60,9 @@ class Login extends Component {
   }
 
   render() {
-    const {name, password, showError, errorMsg} = this.state
+    const {username, password, showError, errorMsg} = this.state
 
     const jwtToken = Cookies.get('jwt_token')
-    console.log(jwtToken)
 
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
@@ -89,7 +89,7 @@ class Login extends Component {
                   id="name"
                   className="input-field"
                   onChange={this.onChangeUserName}
-                  value={name}
+                  value={username}
                 />
                 <label htmlFor="pass" className="labels">
                   PASSWORD
@@ -130,7 +130,7 @@ class Login extends Component {
               id="username"
               className="input-field"
               onChange={this.onChangeUserName}
-              value={name}
+              value={username}
             />
             <label htmlFor="password" className="labels">
               PASSWORD
